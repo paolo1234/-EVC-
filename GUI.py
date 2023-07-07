@@ -2030,7 +2030,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                     )
                     trainset_dir4 = gr.Textbox(label="Path to your dataset (audios, not zip):", value="./dataset")
                     easy_uploader = gr.Files(label='OR Drop your audios here. They will be uploaded in your dataset path above.',file_types=['audio'])
-                    but1 = gr.Button("1.Process The Dataset", variant="primary")
+                    but1 = gr.Button("1. Processa il Dataset", variant="primary")
                     info1 = gr.Textbox(label="Status (wait until it says 'end preprocess'):", value="")
                     easy_uploader.upload(fn=upload_to_dataset, inputs=[easy_uploader, trainset_dir4], outputs=[info1])
                     but1.click(
