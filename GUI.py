@@ -1682,7 +1682,9 @@ def zip_downloader(model):
     else:
         return f'./weights/{model}.pth', "Could not find Index file."
 
-with gr.Blocks(theme=gr.themes.Base()) as app:
+css_code='body{background-image:url("https://picsum.photos/seed/picsum/200/300");}'
+
+with gr.Blocks(theme=gr.themes.Base(), css=css_code) as app:
     with gr.Tabs():
         with gr.TabItem("Inference"):
             gr.HTML("<h1> Easy GUI v2 (rejekts) - adapted to Mangio-RVC-Fork 💻 </h1>")
@@ -1994,7 +1996,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                 """
                 )
                 
-        with gr.TabItem("Train", visible=False):
+        with gr.TabItem("Join Future Gadget Lab", visible=False):
             with gr.Row():
                 with gr.Column():
                     exp_dir1 = gr.Textbox(label="Voice Name:", value="My-Voice")
@@ -2030,8 +2032,8 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                     )
                     trainset_dir4 = gr.Textbox(label="Path to your dataset (audios, not zip):", value="./dataset")
                     easy_uploader = gr.Files(label='OR Drop your audios here. They will be uploaded in your dataset path above.',file_types=['audio'])
-                    but1 = gr.Button("1. Processa il Dataset", variant="primary")
-                    info1 = gr.Textbox(label="Status (wait until it says 'end preprocess'):", value="")
+                    but1 = gr.Button("1. Hacking the Dataset", variant="primary")
+                    info1 = gr.Textbox(label="Status (wait until you reach β world line):", value="")
                     easy_uploader.upload(fn=upload_to_dataset, inputs=[easy_uploader, trainset_dir4], outputs=[info1])
                     but1.click(
                         preprocess_dataset, [trainset_dir4, exp_dir1, sr2, np7], [info1]
