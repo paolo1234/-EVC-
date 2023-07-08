@@ -1682,12 +1682,10 @@ def zip_downloader(model):
     else:
         return f'./weights/{model}.pth', "Could not find Index file."
 
-css_code='body{background-image:url("https://picsum.photos/seed/picsum/200/300");}'
-
-with gr.Blocks(theme=gr.themes.Base(), css=css_code) as app:
+with gr.Blocks(theme=gr.themes.Base()) as app:
     with gr.Tabs():
         with gr.TabItem("Inference"):
-            gr.HTML("<h1> Easy GUI v2 (rejekts) - adapted to Mangio-RVC-Fork 💻 </h1>")
+            gr.HTML("<img src='https://e7.pngegg.com/pngimages/31/933/png-clipart-kurisu-makise-steins-gate-chibi-anime-the-seven-deadly-sins-12082-kurisu-makise-mammal-vertebrate.png' width=64 height=64 />")
             # Inference Preset Row
             # with gr.Row():
             #     mangio_preset = gr.Dropdown(label="Inference Preset", choices=sorted(get_presets()))
