@@ -1682,7 +1682,7 @@ def zip_downloader(model):
     else:
         return f'./weights/{model}.pth', "Could not find Index file."
 
-with gr.Blocks(theme=gr.themes.Base()) as app:
+with gr.Blocks(css=".gradio-container {background: url('https://w.wallha.com/ws/12/yaTVwfAz.jpg')}") as app:
     with gr.Tabs():
         with gr.TabItem("Inference"):
             gr.HTML("<img src='https://e7.pngegg.com/pngimages/31/933/png-clipart-kurisu-makise-steins-gate-chibi-anime-the-seven-deadly-sins-12082-kurisu-makise-mammal-vertebrate.png' width=64 height=64 />")
