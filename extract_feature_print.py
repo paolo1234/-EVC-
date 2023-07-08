@@ -120,4 +120,4 @@ else:
                     printt("now-%s,all-%s,%s,%s" % (idx, len(todo), file, feats.shape))
         except:
             printt(traceback.format_exc())
-    printt("all-feature-done")
+    printt("El Psy Kongroo!")
