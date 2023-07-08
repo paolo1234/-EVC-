@@ -1,6 +1,6 @@
 {
     "很遗憾您这没有能用的显卡来支持您训练": "Unfortunately, there is no compatible GPU available to support your training.",
-    "是": "Yes",
+    "是": "Salve",
     "step1:正在处理数据": "Step 1: Processing data",
     "step2a:无需提取音高": "Step 2a: Skipping pitch extractione",
     "step2b:正在提取特征": "Step 2b: Extracting features",
